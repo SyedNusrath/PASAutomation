@@ -408,9 +408,24 @@
     // });
 
     $(document).ready(function() {
-    $('#example').DataTable( {
-        responsive: true
+        // $('#example').DataTable( {
+        //     responsive: true
+        // } );
+        $("<table class='example' class='display' cellspacing='0' width='100%'>"
+        +"<thead>"
+        +"<tr>"
+        +"<th>ID</th>"
+        +"<th>Name</th>"
+        +"<th>Date of Birth</th>"
+        +"<th>Location</th>"
+        +"<th>Email Address</th>"
+        +"</tr>"
+        +"</thead>"
+        +"<tbody>").appendTo('#table-section');
+        $('.example').dataTable();
     } );
-} );
+    // $('#create').click(function(){
+
+    // });
 
 })(jQuery);
